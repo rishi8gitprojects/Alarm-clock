@@ -14,7 +14,7 @@ def Alarm_clock(args):
             if now >= remindertime:
                 print(f"{message}")
                 pygame.mixer.init()
-                pygame.mixer.music.load(R"C:\Users\Rishi Roychowdhury\Downloads\beep.mp3.mp3")
+                pygame.mixer.music.load(R"path_to_your_audio_file.mp3") #update your path
                 pygame.mixer.music.play()
                 reminder_times.remove((remindertime, message))
         time.sleep(1)
